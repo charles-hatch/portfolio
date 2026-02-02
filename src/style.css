@@ -51,16 +51,15 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* Header title */
+/* Title */
 .site-title {
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: #111;
   white-space: nowrap;
 }
 
-/* Language buttons */
+/* Language switcher */
 .header-center {
   display: flex;
   justify-content: center;
@@ -106,8 +105,8 @@ body {
   color: #fff;
   cursor: pointer;
   transition:
-    transform 0.15s ease,
-    opacity 0.15s ease;
+    opacity 0.15s ease,
+    transform 0.15s ease;
 }
 
 .contact-btn:hover {
@@ -136,15 +135,31 @@ body {
    ========================================================= */
 
 .card-grid {
-  padding: 3rem 2rem;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 3rem 2rem;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  padding-top: 2rem;
 }
 
+/* Section header (e.g. "My Projects") */
+.section-header {
+  grid-column: 1 / -1;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+.section-header:first-of-type {
+  margin-top: 0;
+}
 /* =========================================================
    5. Cards
    ========================================================= */
@@ -160,7 +175,7 @@ body {
   min-height: 280px;
 }
 
-/* Intro card */
+/* Intro card spans full width */
 .intro-card {
   grid-column: 1 / -1;
 }
@@ -183,7 +198,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 0.85rem;
   color: #777;
 }
@@ -203,7 +217,7 @@ body {
 }
 
 .card-link {
-  color: #111;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -217,7 +231,21 @@ body {
   color: #444;
 }
 
-/* Card hover */
+/* Text flow inside descriptions */
+.card-description p + p {
+  margin-top: 0.6rem;
+}
+
+.card-description ul {
+  margin-top: 0.8rem;
+  padding-left: 1.2rem;
+}
+
+.card-description li + li {
+  margin-top: 0.35rem;
+}
+
+/* Project card hover */
 .project-card {
   transition:
     transform 0.2s ease,
@@ -231,6 +259,11 @@ body {
   border-color: #ccc;
 }
 
+.project-card:hover .card-title {
+  text-decoration: underline;
+}
+
+/* Optional wrapper to make entire card clickable */
 .project-link {
   display: flex;
   flex-direction: column;
@@ -268,6 +301,11 @@ body {
   gap: 0.75rem;
 }
 
+.footer-right {
+  white-space: nowrap;
+}
+
+/* Social icons */
 .social-link {
   display: inline-flex;
   width: 20px;
@@ -285,32 +323,11 @@ body {
   color: #111;
 }
 
-.footer-right {
-  white-space: nowrap;
-}
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-
-  font-size: 0.9rem;
-  color: #222;
-  text-decoration: none;
-
-  padding: 0.4rem 0.6rem;
-  border-radius: 8px;
-
-  transition:
-    background 0.15s ease,
-    color 0.15s ease,
-    transform 0.15s ease;
-}
+/* Inline contact (phone · email) */
 .contact-inline {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-
   font-size: 0.9rem;
   color: #222;
 }
@@ -318,10 +335,8 @@ body {
 .contact-link {
   color: inherit;
   text-decoration: none;
-
   padding: 0.35rem 0.45rem;
   border-radius: 6px;
-
   transition:
     background 0.15s ease,
     color 0.15s ease;
@@ -335,4 +350,19 @@ body {
 .contact-separator {
   opacity: 0.4;
   user-select: none;
+}
+
+/* Footer – mobile */
+@media (max-width: 640px) {
+  .site-footer {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .footer-right {
+    width: 100%;
+    text-align: right;
+  }
 }

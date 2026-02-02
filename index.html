@@ -19,19 +19,22 @@
         </nav>
 
         <div class="header-right">
-          <button id="contact-btn" class="contact-btn">Contact</button>
+          <h3>Web Developer in Tokyo</h3>
         </div>
       </header>
 
       <main class="card-grid">
+        <section class="section-header">
+          <h2 class="section-title">Profile</h2>
+        </section>
         <!-- Introduction -->
         <article class="card intro-card">
           <div class="card-content">
-            <h2 class="card-title">About Me</h2>
+            <!-- <h2 class="card-title">Profile</h2> -->
             <div class="card-description">
               <p>
                 I’m a junior web developer from the UK, currently self-studying
-                and building practical web projects.
+                and building web projects.
               </p>
               <p>
                 I’m a Computer Science graduate with an IT support background,
@@ -63,6 +66,10 @@
           </div>
         </article>
 
+        <section class="section-header">
+          <h2 class="section-title">My Projects</h2>
+        </section>
+
         <!-- Project 1 -->
         <article class="card project-card">
           <a
@@ -72,7 +79,7 @@
             rel="noopener noreferrer"
           >
             <div class="card-image">
-              <img src="/src/img/project-img1.png" alt="Memo App preview" />
+              <img src="/img/project-img1.png" alt="Memo App preview" />
             </div>
 
             <div class="card-content">
@@ -96,13 +103,16 @@
             rel="noopener noreferrer"
           >
             <div class="card-image">
-              <div class="image-placeholder">Project Preview</div>
+              <img
+                src="/img/project-img2.png"
+                alt="Directions Game App preview"
+              />
             </div>
             <div class="card-content">
-              <h2 class="card-title">Weather Dashboard</h2>
+              <h2 class="card-title">Directions Game</h2>
               <p class="card-description">
-                A dashboard-style layout displaying weather data with a focus on
-                spacing, typography, and mobile-first design decisions.
+                An in-browser game intended to be used in the classroom to teach
+                Japanese elementary school students English.
               </p>
             </div>
           </a>
@@ -117,13 +127,13 @@
             rel="noopener noreferrer"
           >
             <div class="card-image">
-              <div class="image-placeholder">Project Preview</div>
+              <img src="/img/project-img3.png" alt="Other Projects preview" />
             </div>
             <div class="card-content">
               <h2 class="card-title">Other Projects</h2>
               <p class="card-description">
-                A curated collection of smaller experiments and learning
-                projects, including layout tests, UI components, and JavaScript
+                A collection of smaller experiments and learning projects,
+                including layout tests, an in-browser Kanji game, and JavaScript
                 exercises.
               </p>
             </div>
@@ -183,3 +193,8 @@
 
 <!-- npm run dev -->
 <!-- when page is stable, do language toggle and use browser default -->
+<!-- Clicking on a project should open a new page/tab etc. with a short description about the project,
+ as well as two links - github and pages links. This could be a popup or a new page I like the way
+ Dylan does it so lets copy him
+ https://dylansimon.dev/dsa
+ -->
