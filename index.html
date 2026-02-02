@@ -71,27 +71,31 @@
         </section>
 
         <!-- Project 1 -->
-        <article class="card project-card">
-          <a
-            href="https://charles-hatch.github.io/memo-app/"
-            class="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="card-image">
-              <img src="/img/project-img1.png" alt="Memo App preview" />
-            </div>
+        <article
+          class="card project-card"
+          onclick="
+            openModal({
+              title: 'Memo App',
+              description:
+                'A lightweight memo-taking app focused on clean UI and simple state.',
+              live: 'https://charles-hatch.github.io/memo-app/',
+              github: 'https://github.com/charles-hatch/memo-app',
+            })
+          "
+        >
+          <div class="card-image">
+            <img src="/img/project-img1.png" alt="Memo App preview" />
+          </div>
 
-            <div class="card-content">
-              <h2 class="card-title">Memo App</h2>
+          <div class="card-content">
+            <h2 class="card-title">Memo App</h2>
 
-              <p class="card-description">
-                A lightweight memo-taking web app focused on clean UI,
-                responsive layout, and simple state management. Built to
-                practice semantic HTML and layout patterns.
-              </p>
-            </div>
-          </a>
+            <p class="card-description">
+              A lightweight memo-taking web app focused on clean UI, responsive
+              layout, and simple state management. Built to practice semantic
+              HTML and layout patterns.
+            </p>
+          </div>
         </article>
 
         <!-- Project 2 -->
@@ -187,6 +191,20 @@
       <div class="footer-right">© 2026 Charles Hatch</div>
     </footer>
 
+    <div class="modal-overlay" id="projectModal" hidden>
+      <div class="modal" role="dialog" aria-modal="true">
+        <button class="modal-close" aria-label="Close">×</button>
+
+        <h2 class="modal-title">Project Title</h2>
+
+        <p class="modal-description">Project description goes here.</p>
+
+        <div class="modal-actions">
+          <a href="#" target="_blank" class="modal-btn">Live Demo</a>
+          <a href="#" target="_blank" class="modal-btn secondary">GitHub</a>
+        </div>
+      </div>
+    </div>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

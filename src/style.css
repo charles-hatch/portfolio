@@ -352,6 +352,84 @@ body {
   user-select: none;
 }
 
+/* =========================
+   Modal
+   ========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: #fff;
+  width: min(520px, 90vw);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.modal-description {
+  margin-top: 0.75rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.modal-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.modal-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.modal-btn.secondary {
+  background: #f3f3f3;
+  color: #111;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.4rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-close:hover {
+  color: #111;
+}
+
+/* Prevent background scroll */
+body.modal-open {
+  overflow: hidden;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 /* Footer – mobile */
 @media (max-width: 640px) {
   .site-footer {
