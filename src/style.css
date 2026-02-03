@@ -395,15 +395,15 @@ body {
 .modal-btn {
   padding: 0.6rem 1rem;
   border-radius: 8px;
-  background: #111;
-  color: #fff;
+  background: #e5e5e5;
+  color: #111;
   text-decoration: none;
   font-size: 0.85rem;
 }
 
-.modal-btn.secondary {
-  background: #f3f3f3;
-  color: #111;
+.modal-btn:hover {
+  background: #111;
+  color: #fff;
 }
 
 .modal-close {
