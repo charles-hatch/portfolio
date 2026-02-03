@@ -25,42 +25,30 @@
 
       <main class="card-grid">
         <section class="section-header">
-          <h2 class="section-title">Profile</h2>
+          <h2 class="section-title">My Profile</h2>
         </section>
         <!-- Introduction -->
         <article class="card intro-card">
           <div class="card-content">
-            <!-- <h2 class="card-title">Profile</h2> -->
             <div class="card-description">
               <p>
-                I’m a junior web developer from the UK, currently self-studying
-                and building web projects.
+                I’m a junior web developer from the UK with a Computer Science
+                degree and experience in IT support. I build practical web
+                projects and am aiming to move into full-time web development.
               </p>
               <p>
-                I’m a Computer Science graduate with an IT support background,
-                transitioning into full-time web development.
-              </p>
-              <p>
-                The projects below use HTML, CSS, and JavaScript, and I’m
-                currently learning Node.js and React.
+                The projects below are built with HTML, CSS, and JavaScript, and
+                I’m currently learning Node.js and React.
               </p>
 
               <ul class="profile-highlights">
-                <li>
-                  <strong>Self-taught</strong> - Continuous independent study
-                  using the Odin Project
-                </li>
-                <li>
-                  <strong>JLPT N2</strong> – professional working Japanese
-                </li>
-                <li>
-                  <strong>Japan Spouse Visa Holder</strong> - No work
-                  restrictions
-                </li>
-                <li>
-                  <strong>4 years of residence in Tokyo, Japan</strong> -
-                  Comfortable in Japanese work environments
-                </li>
+                <li class="chip chip-blue">Self-taught Web Dev</li>
+                <li class="chip chip-green">JLPT N2</li>
+                <li class="chip chip-purple">Japan Spouse Visa Holder</li>
+                <li class="chip chip-orange">4 years in Tokyo</li>
+                <li class="chip chip-gray">HTML</li>
+                <li class="chip chip-gray">CSS</li>
+                <li class="chip chip-gray">JavaScript</li>
               </ul>
             </div>
           </div>
@@ -99,49 +87,56 @@
         </article>
 
         <!-- Project 2 -->
-        <article class="card project-card">
-          <a
-            href="https://charles-hatch.github.io/memo-app/"
-            class="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="card-image">
-              <img
-                src="/img/project-img2.png"
-                alt="Directions Game App preview"
-              />
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Directions Game</h2>
-              <p class="card-description">
-                An in-browser game intended to be used in the classroom to teach
-                Japanese elementary school students English.
-              </p>
-            </div>
-          </a>
+        <article
+          class="card project-card"
+          onclick="
+            openModal({
+              title: 'Directions Game',
+              description:
+                'This project is intended to help teach Japanese Elementary students learn English for directional words. The buttons are written in English, and when the project is complete, there will be a legend explaining various methods to employ this simple game in the browser. Students can use their tablets to quickly pull this up, and no doubt will enjoy the game.',
+              live: 'https://charles-hatch.github.io/memo-app/',
+              github: 'https://github.com/charles-hatch/directions-game',
+            })
+          "
+        >
+          <div class="card-image">
+            <img
+              src="/img/project-img2.png"
+              alt="Directions Game App preview"
+            />
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Directions Game</h2>
+            <p class="card-description">
+              An in-browser game intended to be used in the classroom to teach
+              Japanese elementary school students English.
+            </p>
+          </div>
         </article>
 
         <!-- Project 3 -->
-        <article class="card project-card">
-          <a
-            href="https://charles-hatch.github.io/memo-app/"
-            class="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="card-image">
-              <img src="/img/project-img3.png" alt="Other Projects preview" />
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Other Projects</h2>
-              <p class="card-description">
-                A collection of smaller experiments and learning projects,
-                including layout tests, an in-browser Kanji game, and JavaScript
-                exercises.
-              </p>
-            </div>
-          </a>
+        <article
+          class="card project-card"
+          onclick="
+            openModal({
+              title: 'Other Projects',
+              description: 'Check out my other projects below',
+              live: '',
+              github: 'https://github.com/charles-hatch?tab=repositories',
+            })
+          "
+        >
+          <div class="card-image">
+            <img src="/img/project-img3.png" alt="Other Projects preview" />
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Other Projects</h2>
+            <p class="card-description">
+              A collection of smaller experiments and learning projects,
+              including layout tests, an in-browser Kanji game, and JavaScript
+              exercises.
+            </p>
+          </div>
         </article>
       </main>
     </div>
@@ -215,4 +210,6 @@
  as well as two links - github and pages links. This could be a popup or a new page I like the way
  Dylan does it so lets copy him
  https://dylansimon.dev/dsa
+
+ I NEED TO ADD SCREENSHOTS / a GIF to this page!!!
  -->
