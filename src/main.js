@@ -10,8 +10,18 @@ const closeBtn = modal.querySelector(".modal-close");
 window.openModal = function ({ title, description, live, github }) {
   titleEl.textContent = title;
   descEl.textContent = description;
-  liveBtn.href = live;
+
   githubBtn.href = github;
+  githubBtn.style.display = "inline-flex";
+
+  // Live Demo (only show if provided)
+  if (live && live.trim() !== "") {
+    liveBtn.href = live;
+    liveBtn.style.display = "inline-flex";
+  } else {
+    liveBtn.removeAttribute("href");
+    liveBtn.style.display = "none";
+  }
 
   modal.hidden = false;
 };
