@@ -511,6 +511,10 @@ body {
   color: #111;
 }
 
+.modal-description {
+  white-space: pre-line;
+}
+
 /* State helpers */
 
 body.modal-open {
