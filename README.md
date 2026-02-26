@@ -1,6 +1,6 @@
 # Portfolio – Charles Hatch
 
-This is my portfolio website built with Vite, HTML, CSS, and JavaScript.
+This is my portfolio website.
 
 Live site:  
 https://charles-hatch.github.io/portfolio/
