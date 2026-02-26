@@ -1,19 +1,16 @@
 # Portfolio – Charles Hatch
 
-Personal portfolio website built with Vite, HTML, CSS, and JavaScript.
+This is my portfolio website built with Vite, HTML, CSS, and JavaScript.
 
 Live site:  
 https://charles-hatch.github.io/portfolio/
 
-## Stack
+Made with:
 
-- HTML5
-- CSS3
 - JavaScript (ES Modules)
-- Vite (build tool)
-- GitHub Pages (deployment)
+- Vite (a build tool)
 
-## Local Development
+## Development Commands
 
 ```bash
 npm install
